@@ -1,0 +1,77 @@
+/* reset default styles */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* colors  */
+:root {
+    --primary: #EEBF00;
+    --secondary: #232B38;
+    --ternary: #6C6C6C;
+    --danger: #FE4545;
+    --pure: #FEFEFE;
+    --light: #F0F0F0;
+    --heaven: #FFFFFF;
+    --footer: #2D333F;
+}
+
+
+/* some custom & common utilities */
+
+/* container for mobile */
+.container {
+    width: 100%;
+    padding: 0 1.5rem;
+    margin: 0 auto;
+}
+
+
+/* container for medium devices */
+@media screen and (min-width:576px) {
+.container {
+    max-width: 540px;
+}
+}
+
+/* container for extra-medium devices */
+@media screen and (min-width:768px) {
+.container {
+    max-width: 720px;
+}
+}
+
+/* container for large devices */
+@media screen and (min-width:992px) {
+.container {
+    max-width: 960px;
+}
+}
+
+/* container for x-large devices */
+@media screen and (min-width:1200px) {
+.container {
+    max-width: 1152px;
+}
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.6rem;
+}
